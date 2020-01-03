@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".listing.MoviesListingActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <fragment
+        android:id="@+id/fragment_listing"
+        android:name="com.tulip.movieguide.listing.MoviesListingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_movies"/>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/banner"
+        ads:adSize="SMART_BANNER"/>
+
+
+</RelativeLayout>
