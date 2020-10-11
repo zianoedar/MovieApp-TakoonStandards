@@ -9,18 +9,18 @@
 
     <fragment
         android:id="@+id/fragment_listing"
-        android:name="com.tulip.movieguide.listing.MoviesListingFragment"
+        android:name="com.freemovies.watchmoviesonline2020.listing.MoviesListingFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_movies"/>
 
-    <com.google.android.gms.ads.AdView
+   <!-- <com.google.android.gms.ads.AdView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/banner"
+        android:id="@+id/bannermain"
         android:layout_alignParentBottom="true"
         ads:adUnitId="@string/banner"
-        ads:adSize="SMART_BANNER"/>
+        ads:adSize="SMART_BANNER"/>-->
 
 
 </RelativeLayout>

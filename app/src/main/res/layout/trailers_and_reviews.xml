@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/trailers_label"
@@ -27,6 +27,72 @@
 
     </HorizontalScrollView>
 
+   <!-- <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trailersandrevies_medium"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        ads:adUnitId="@string/banner"
+        ads:adSize="MEDIUM_RECTANGLE"/>-->
+
+
+   <!-- <TextView
+        android:id="@+id/onlinewatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Watch Online:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@android:color/white"
+        />
+-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find your more on YouTube:"
+        android:textColor="#D3D2D2"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/sourece1"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:background="#FF0000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:text="Search Now!" />
+<!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Source:2 (watch-it) "
+        android:id="@+id/sourece2"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Source:3 (putlocker) "
+        android:id="@+id/sourece3"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Source:4 (Movie Watcher) "
+        android:layout_marginTop="5dp"
+        android:id="@+id/sourece4"
+        />
+-->
     <TextView
         android:id="@+id/reviews_label"
         android:layout_width="wrap_content"

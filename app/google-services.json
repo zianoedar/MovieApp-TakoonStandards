@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "129472815111",
+    "firebase_url": "https://movie-trailers-1fb25.firebaseio.com",
+    "project_id": "movie-trailers-1fb25",
+    "storage_bucket": "movie-trailers-1fb25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129472815111:android:0b06ff21762caaf2b00aa2",
+        "android_client_info": {
+          "package_name": "com.freemovies.watchmoviesonline2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129472815111-fd2fabsihbbgqmtd495g3pc4ct5f8cmp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freemovies.watchmoviesonline2020",
+            "certificate_hash": "dcc015daabecda5d4f1d1cb886e65006fa20dd10"
+          }
+        },
+        {
+          "client_id": "129472815111-dkve18tga070uuvch6r8324ria52jvha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwEKgQKv65Yqur1rXFAWdeE5ZhuuOWbe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129472815111-dkve18tga070uuvch6r8324ria52jvha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

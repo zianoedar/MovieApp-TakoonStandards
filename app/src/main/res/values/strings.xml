@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">MovieGuide</string>
+    <string name="app_name">HD Movie Trailers</string>
     <string name="action_filter">Filter</string>
     <string name="loading_movies">Loading Movies</string>
     <string name="sort_by">Sort By</string>
-    <string name="movie_guide">MovieGuide</string>
+    <string name="movie_guide">Movies</string>
     <string name="trailers">Trailers</string>
     <string name="reviews">Reviews</string>
     <string name="summary">Summary</string>
@@ -15,17 +15,16 @@
     <string name="most_popular">Most Popular</string>
     <string name="action_search">Search</string>
 
-  <!--  &lt;!&ndash;Admob Original Id's&ndash;&gt;
-    <string name="app_id" translatable="false">ca-app-pub-3815674557984993~4189348607</string>
-    <string name="banner" translatable="false">ca-app-pub-3815674557984993/1563185264</string>
-    <string name="interstitial" translatable="false">ca-app-pub-3815674557984993/6240796874</string>-->
+
+    <!--
+     &lt;!&ndash;Admob Original Id's&ndash;&gt;
+    <string name="banner" translatable="false">ca-app-pub-3815674557984993/8799295341</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3815674557984993/6951027054</string>
+-->
+
 
     <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
-
-    <string name="title_activity_splash_screen">SplashScreen</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:layout_gravity="center"
+    tools:context=".WatchMovie">
+
+    <!-- <LinearLayout android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         tools:context=".WatchMovie">-->
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:handleNetworkEvents="true"
+        app:showVideoCurrentTime="true"
+        app:showVideoDuration="true"
+        app:showYouTubeButton="true"
+        app:showSeekBar="true"
+        app:showFullScreenButton="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:text="Movie is Loading!"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:text="Please Weight..."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch on Youtube"
+        android:background="#D82F2F"
+        android:layout_marginTop="15dp"
+        android:id="@+id/watch_on_youtube_button"
+        android:visibility="gone"
+        android:textColor="#ffffff"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/watchbanner"
+        android:layout_marginTop="20dp"
+        ads:adUnitId="@string/banner"
+        ads:adSize="MEDIUM_RECTANGLE"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="SomeTimes Internet Service Provider casue delay in Network Connectivity. Please be patient!"/>
+    <!--    </LinearLayout>-->
+
+</LinearLayout>
+

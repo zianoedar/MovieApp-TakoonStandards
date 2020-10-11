@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".IndianMovies">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="WatchSelectedMovie"
+                android:src="@drawable/hw"
+                android:id="@+id/hw"
+                android:layout_marginRight="15dp"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="WatchSelectedMovie"
+                android:src="@drawable/bw"
+                android:layout_marginRight="15dp"
+                android:id="@+id/bw"
+                android:background="@null"/>
+
+            <!-- <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:onClick="WatchSelectedMovie"
+                 android:src="@drawable/si"
+                 android:id="@+id/si"
+                 android:layout_marginRight="15dp"
+                 android:background="@null"/>
+
+             <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:onClick="WatchSelectedMovie"
+                 android:src="@drawable/pk"
+                 android:layout_marginRight="15dp"
+                 android:id="@+id/pk"
+                 android:background="@null"/>
+
+             <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:onClick="WatchSelectedMovie"
+                 android:src="@drawable/pm"
+                 android:layout_marginRight="15dp"
+                 android:id="@+id/pm"
+                 android:background="@null"/>
+
+             <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:onClick="WatchSelectedMovie"
+                 android:src="@drawable/ch"
+                 android:layout_marginRight="15dp"
+                 android:id="@+id/ch"
+                 android:background="@null"/>
+ -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h1"
+                        android:id="@+id/h1"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h2"
+                        android:id="@+id/h2"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h3"
+                        android:id="@+id/h3"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h4"
+                        android:id="@+id/h4"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h5"
+                        android:id="@+id/h5"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h6"
+                        android:id="@+id/h6"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h7"
+                        android:id="@+id/h7"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h8"
+                        android:id="@+id/h8"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h9"
+                        android:id="@+id/h9"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.google.android.gms.ads.AdView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/indian_movie_banner_1"
+                ads:adUnitId="@string/banner"
+                ads:adSize="SMART_BANNER"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h10"
+                        android:id="@+id/h10"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h11"
+                        android:id="@+id/h11"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h12"
+                        android:id="@+id/h12"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h13"
+                        android:id="@+id/h13"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h14"
+                        android:id="@+id/h14"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h15"
+                        android:id="@+id/h15"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h16"
+                        android:id="@+id/h16"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h17"
+                        android:id="@+id/h17"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h18"
+                        android:id="@+id/h18"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.google.android.gms.ads.AdView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/indian_movie_banner_2"
+                ads:adUnitId="@string/banner"
+                ads:adSize="SMART_BANNER"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h19"
+                        android:id="@+id/h19"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h20"
+                        android:id="@+id/h20"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h21"
+                        android:id="@+id/h21"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h22"
+                        android:id="@+id/h22"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h23"
+                        android:id="@+id/h23"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h24"
+                        android:id="@+id/h24"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h25"
+                        android:id="@+id/h25"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h26"
+                        android:id="@+id/h26"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h27"
+                        android:id="@+id/h27"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h28"
+                        android:id="@+id/h28"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h29"
+                        android:id="@+id/h29"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="WatchSelectedMovie"
+                        android:src="@drawable/h30"
+                        android:id="@+id/h30"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
