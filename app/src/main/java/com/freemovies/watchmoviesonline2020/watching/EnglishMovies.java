@@ -34,6 +34,7 @@ public class EnglishMovies extends AppCompatActivity {
 
     public void WatchSelectedMovie(View v) {
         Intent intent= new Intent(EnglishMovies.this, WatchMovie.class);
+        intent.putExtra("EXTRA_SESSION_ID", "2");
 
         switch(v.getId()){
 //__________________________________Top Bar Start________________________________
@@ -49,7 +50,6 @@ public class EnglishMovies extends AppCompatActivity {
                 finish();
                 break;
 //__________________________________Top Bar End________________________________
-
             case R.id.e1: intent.putExtra("id","4OL0esXzMFw");startActivity(intent);
                 break;
 

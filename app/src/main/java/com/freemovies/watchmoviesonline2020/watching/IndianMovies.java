@@ -33,6 +33,7 @@ public class IndianMovies extends AppCompatActivity {
 
     public void WatchSelectedMovie(View v) {
         Intent intent= new Intent(IndianMovies.this, WatchMovie.class);
+        intent.putExtra("EXTRA_SESSION_ID", "1");
 
         switch(v.getId()){
 //__________________________________Top Bar Start________________________________

@@ -19,7 +19,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Abs
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class WatchMovie extends AppCompatActivity {
-
+    String sessionId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +34,8 @@ public class WatchMovie extends AppCompatActivity {
 
         Intent intent = getIntent();
         final String VideoID = intent.getStringExtra("id");
+        sessionId = getIntent().getStringExtra("EXTRA_SESSION_ID");
+
         YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
         getLifecycle().addObserver(youTubePlayerView);
 //        youTubePlayerView.enterFullScreen();
@@ -70,9 +72,16 @@ public class WatchMovie extends AppCompatActivity {
                 {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(WatchMovie.this, IndianMovies.class);
-                        startActivity(intent);
-                        finish();
+                        if(sessionId.contains("1")){
+                            Intent intent = new Intent(WatchMovie.this, IndianMovies.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else if(sessionId.contains("2")){
+                            Intent intent = new Intent(WatchMovie.this, EnglishMovies.class);
+                            startActivity(intent);
+                            finish();
+                        }
                     }
 
                 })
