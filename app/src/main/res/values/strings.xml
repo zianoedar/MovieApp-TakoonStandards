@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HD Movie Trailers</string>
+    <string name="app_name">Movies</string>
     <string name="action_filter">Filter</string>
     <string name="loading_movies">Loading Movies</string>
     <string name="sort_by">Sort By</string>
@@ -14,17 +14,19 @@
     <string name="highest_rated">Highest Rated</string>
     <string name="most_popular">Most Popular</string>
     <string name="action_search">Search</string>
+<!--
 
-
-    <!--
-     &lt;!&ndash;Admob Original Id's&ndash;&gt;
+    &lt;!&ndash;Admob Original Id's&ndash;&gt;
+    <string name="app_id" translatable="false">ca-app-pub-3815674557984993~4669506313</string>
+    <string name="reward" translatable="false">ca-app-pub-3815674557984993/7594637570</string>
     <string name="banner" translatable="false">ca-app-pub-3815674557984993/8799295341</string>
     <string name="interstitial" translatable="false">ca-app-pub-3815674557984993/6951027054</string>
 -->
 
 
-    <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+     <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+     <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+     <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="reward" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
 
 </resources>

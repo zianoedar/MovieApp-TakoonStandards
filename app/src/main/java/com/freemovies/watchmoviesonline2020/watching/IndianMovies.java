@@ -32,7 +32,7 @@ public class IndianMovies extends AppCompatActivity {
     }
 
     public void WatchSelectedMovie(View v) {
-        Intent intent= new Intent(this, WatchMovie.class);
+        Intent intent= new Intent(IndianMovies.this, WatchMovie.class);
 
         switch(v.getId()){
 //__________________________________Top Bar Start________________________________
@@ -49,7 +49,7 @@ public class IndianMovies extends AppCompatActivity {
                 break;
 //__________________________________Top Bar End________________________________
 
-            case R.id.h1: intent.putExtra("id","MsklIVTGS-E");startActivity(intent);
+            case R.id.h1: intent.putExtra("id","6FqUN9MO0zc");startActivity(intent);
                 break;
 
             case R.id.h2:
@@ -78,40 +78,40 @@ public class IndianMovies extends AppCompatActivity {
             case R.id.h9: intent.putExtra("id","ZayhnBx5Vx8");startActivity(intent);
                 break;
 
-            case R.id.h10: intent.putExtra("id","OykoBrvBn5U");startActivity(intent);
+            case R.id.h10: intent.putExtra("id","qPEeo4qGKF4");startActivity(intent);
                 break;
 
             case R.id.h11: intent.putExtra("id","D0O1G5oX5tM");startActivity(intent);
                 break;
 
-            case R.id.h12: intent.putExtra("id","Yw0pBIoZMoA");startActivity(intent);
+            case R.id.h12: intent.putExtra("id","cx4Xwae513g");startActivity(intent);
                 break;
 
-            case R.id.h13: intent.putExtra("id","cTlqjFfwBow");startActivity(intent);
+            case R.id.h13: intent.putExtra("id","NJhfX3HTvcc");startActivity(intent);
                 break;
 
-            case R.id.h14: intent.putExtra("id","6vYRajq1myE&pp=QAA%3D");startActivity(intent);
+            case R.id.h14: intent.putExtra("id","G9ZV4NZ5Ulw");startActivity(intent);
                 break;
 
-            case R.id.h15: intent.putExtra("id","atlraqXj4q8");startActivity(intent);
+            case R.id.h15: intent.putExtra("id","Di1Xgbfwc1g");startActivity(intent);
                 break;
 
-            case R.id.h16: intent.putExtra("id","LXXkiUKDK4w");startActivity(intent);
+            case R.id.h16: intent.putExtra("id","R_BHXsS0E8U");startActivity(intent);
                 break;
 
-            case R.id.h17: intent.putExtra("id","CbXe9UQ9QTQ");startActivity(intent);
+            case R.id.h17: intent.putExtra("id","pntkYAIBHsA");startActivity(intent);
                 break;
 
-            case R.id.h18: intent.putExtra("id","CbXe9UQ9QTQ");startActivity(intent);
+            case R.id.h18: intent.putExtra("id","VPTTwpUsjcA");startActivity(intent);
                 break;
 
-            case R.id.h19: intent.putExtra("id","hKD_uDlhyTI");startActivity(intent);
+            case R.id.h19: intent.putExtra("id","vRPtaAaja5I");startActivity(intent);
                 break;
 
-            case R.id.h20: intent.putExtra("id","jl8oZbdH9c8");startActivity(intent);
+            case R.id.h20: intent.putExtra("id","5s0dAbPCduM");startActivity(intent);
                 break;
 
-            case R.id.h21: intent.putExtra("id","oKBzZwpnuHQ");startActivity(intent);
+            case R.id.h21: intent.putExtra("id","OI-z8OVzAps");startActivity(intent);
                 break;
 
             case R.id.h22: intent.putExtra("id","TcDmarWK68c");startActivity(intent);
@@ -126,13 +126,13 @@ public class IndianMovies extends AppCompatActivity {
             case R.id.h25: intent.putExtra("id","Wqz1WMkcOEc");startActivity(intent);
                 break;
 
-            case R.id.h26: intent.putExtra("id","jxitDNKrAj0");startActivity(intent);
+            case R.id.h26: intent.putExtra("id","0ztZqOPPKYM");startActivity(intent);
                 break;
 
-            case R.id.h27: intent.putExtra("id","AOUqjYgFaeg");startActivity(intent);
+            case R.id.h27: intent.putExtra("id","_1MO5-R9ApA");startActivity(intent);
                 break;
 
-            case R.id.h28: intent.putExtra("id","Jlnr61dEk3c");startActivity(intent);
+            case R.id.h28: intent.putExtra("id","GZzzqoAh8u0");startActivity(intent);
                 break;
 
             case R.id.h29: intent.putExtra("id","f2EAvRNz4RM");startActivity(intent);
@@ -141,6 +141,11 @@ public class IndianMovies extends AppCompatActivity {
             case R.id.h30: intent.putExtra("id","QG81vURIDNE");startActivity(intent);
                 break;
         }
-
+        finish();
     }
+    public void onBackPressed() {
+        Intent intent = new Intent(this, SelectionActivity.class);
+        startActivity(intent);
+    }
+
 }

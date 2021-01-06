@@ -1,17 +1,14 @@
 package com.freemovies.watchmoviesonline2020.watching;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.freemovies.watchmoviesonline2020.R;
 import com.google.android.gms.ads.AdRequest;
@@ -26,12 +23,7 @@ public class WatchMovie extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        try {
-            setContentView(R.layout.activity_watch_movie2);
-        } catch (Exception e) {
-            Toast.makeText(this, "Device Error!", Toast.LENGTH_SHORT).show();        }
-            startActivity(new Intent(this, SelectionActivity.class));
-
+        setContentView(R.layout.activity_watch_movie2);
         try {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }catch (Exception e){}
@@ -78,6 +70,8 @@ public class WatchMovie extends AppCompatActivity {
                 {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(WatchMovie.this, IndianMovies.class);
+                        startActivity(intent);
                         finish();
                     }
 

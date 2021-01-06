@@ -17,14 +17,25 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.reward.RewardItem;
+import com.google.android.gms.ads.reward.RewardedVideoAd;
+import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
-public class SelectionActivity extends AppCompatActivity {
+public class SelectionActivity extends AppCompatActivity implements RewardedVideoAdListener {
     Intent intent;
     InterstitialAd ad;
+    private RewardedVideoAd mRewardedVideoAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selection);
+
+        MobileAds.initialize(this, getString(R.string.app_id));
+        mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
+        mRewardedVideoAd.setRewardedVideoAdListener(this);
+        loadRewardedVideoAd();
 
         AdView banner = findViewById(R.id.selectionbanner);
         banner.getLayoutParams().height = AdSize.SMART_BANNER.getHeightInPixels(this);
@@ -41,6 +52,11 @@ public class SelectionActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void loadRewardedVideoAd() {
+        mRewardedVideoAd.loadAd(getString(R.string.reward),
+                new AdRequest.Builder().build());
     }
 
     public void ButtonSelected(View v) {
@@ -62,15 +78,15 @@ public class SelectionActivity extends AppCompatActivity {
 
             case R.id.watch:
                 intent = new Intent(this, IndianMovies.class);
-                if(ad.isLoaded()) {
+                if (mRewardedVideoAd.isLoaded()) {
+                    mRewardedVideoAd.show();
+                } else if(ad.isLoaded()) {
                     ad.show();
                 }
-                else
-                    try {
-                        startActivity(intent);
-                    }catch (Exception e){
-                        Toast.makeText(this, "Error Loading! Try Again in a while.", Toast.LENGTH_SHORT).show();
-                    }
+                else {
+                    startActivity(intent);
+                    finish();
+                }
                 break;
 
             case R.id.feedback:
@@ -161,4 +177,48 @@ public class SelectionActivity extends AppCompatActivity {
         alert.getButton(AlertDialog.BUTTON_NEUTRAL).setTextColor(getResources().getColor(R.color.black));
     }
 
+    @Override
+    public void onRewardedVideoAdLoaded() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdOpened() {
+
+    }
+
+    @Override
+    public void onRewardedVideoStarted() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdClosed() {
+        intent = new Intent(this, IndianMovies.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    @Override
+    public void onRewarded(RewardItem rewardItem) {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdLeftApplication() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdFailedToLoad(int i) {
+
+    }
+
+    @Override
+    public void onRewardedVideoCompleted() {
+        intent = new Intent(this, IndianMovies.class);
+        startActivity(intent);
+        finish();
+    }
 }

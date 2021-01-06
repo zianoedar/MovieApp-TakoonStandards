@@ -19,9 +19,9 @@ public class MovieDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_details);
 
-        AdView banner = findViewById(R.id.banner);
+        /*AdView banner = findViewById(R.id.banner);
         banner.getLayoutParams().height = AdSize.SMART_BANNER.getHeightInPixels(this);
-        banner.loadAd(new AdRequest.Builder().build());
+        banner.loadAd(new AdRequest.Builder().build());*/
 
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();

@@ -33,7 +33,7 @@ public class EnglishMovies extends AppCompatActivity {
     }
 
     public void WatchSelectedMovie(View v) {
-        Intent intent= new Intent(this, WatchMovie.class);
+        Intent intent= new Intent(EnglishMovies.this, WatchMovie.class);
 
         switch(v.getId()){
 //__________________________________Top Bar Start________________________________
@@ -50,7 +50,7 @@ public class EnglishMovies extends AppCompatActivity {
                 break;
 //__________________________________Top Bar End________________________________
 
-            case R.id.e1: intent.putExtra("id","xjovgV0BVvs");startActivity(intent);
+            case R.id.e1: intent.putExtra("id","4OL0esXzMFw");startActivity(intent);
                 break;
 
             case R.id.e2: intent.putExtra("id","TBBhDtdWmr0");startActivity(intent);
@@ -62,16 +62,16 @@ public class EnglishMovies extends AppCompatActivity {
             case R.id.e4: intent.putExtra("id","6qaGifRpQbk");startActivity(intent);
                 break;
 
-            case R.id.e5: intent.putExtra("id","sSb-bxZN_ihfK40");startActivity(intent);
+            case R.id.e5: intent.putExtra("id","CDDVsg7Uf9s");startActivity(intent);
                 break;
 
             case R.id.e6: intent.putExtra("id","sWfgTiJ3sCs");startActivity(intent);
                 break;
 
-            case R.id.e7: intent.putExtra("id","F1MN2pDhl8M");startActivity(intent);
+            case R.id.e7: intent.putExtra("id","S5SrOgwSetU");startActivity(intent);
                 break;
 
-            case R.id.e8: intent.putExtra("id","Dbln5lECx2o");startActivity(intent);
+            case R.id.e8: intent.putExtra("id","JKnPhSb9lhg");startActivity(intent);
                 break;
 
             case R.id.e9: intent.putExtra("id","INC_xN6Jx88");startActivity(intent);
@@ -86,13 +86,13 @@ public class EnglishMovies extends AppCompatActivity {
             case R.id.e12: intent.putExtra("id","uj-lGUJerBY");startActivity(intent);
                 break;
 
-            case R.id.e13: intent.putExtra("id","79-JqK_9PIQ");startActivity(intent);
+            case R.id.e13: intent.putExtra("id","VvUY3DDo8E4");startActivity(intent);
                 break;
 
             case R.id.e14: intent.putExtra("id","u5Y5veSoz5o");startActivity(intent);
                 break;
 
-            case R.id.h15: intent.putExtra("id","BrT_wgjJef8");startActivity(intent);
+            case R.id.e15: intent.putExtra("id","Gd7p7R5Q8Pw");startActivity(intent);
                 break;
 
             case R.id.e16: intent.putExtra("id","laO5FyhWuQE");startActivity(intent);
@@ -104,7 +104,7 @@ public class EnglishMovies extends AppCompatActivity {
             case R.id.e18: intent.putExtra("id","mjHDFuiyKRU");startActivity(intent);
                 break;
 
-            case R.id.e19: intent.putExtra("id","Va8DcVCRXv4");startActivity(intent);
+            case R.id.e19: intent.putExtra("id","UkMLQOMEIew");startActivity(intent);
                 break;
 
             case R.id.e20: intent.putExtra("id","MFpssQb54OY");startActivity(intent);
@@ -140,5 +140,10 @@ public class EnglishMovies extends AppCompatActivity {
             case R.id.e30: intent.putExtra("id","aTYrGuswisE");startActivity(intent);
                 break;
         }
+        finish();
+    }
+    public void onBackPressed() {
+        Intent intent = new Intent(this, SelectionActivity.class);
+        startActivity(intent);
     }
 }
